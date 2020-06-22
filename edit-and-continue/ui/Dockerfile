@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node
 
 # set up some directories
 RUN mkdir /app
