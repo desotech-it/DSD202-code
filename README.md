@@ -37,8 +37,8 @@ dtr-ci-cd                | Setting up a simple CI pipeline using Jenkins
 
     ```
     $ cd ~
-    $ git clone -b 17.06 https://github.com/docker-training/ddev-labs.git
-    $ cd ddev-labs/ddev-seed
+    $ git clone https://github.com/desotech-it/DSD202-code.git
+    $ cd DSD202-code/ddev-seed
     ```
 
 2. Run the application:
@@ -47,7 +47,7 @@ dtr-ci-cd                | Setting up a simple CI pipeline using Jenkins
     $ docker-compose up --build
     ```
 
-3. Open a browser and navigate to `http://localhost:3000/pet`. You should see a cat GIF. 
+3. Open a browser and navigate to `http://localhost:3000/pet`. You should see a cat GIF.
 4. Refresh the browser view multiple times to see other funny GIFs.
 5. Also try to use the API directly using `curl`, e.g.:
 
@@ -70,4 +70,4 @@ If we want to debug the Java based API we need to install an IDE that supports r
 
 Once Eclipse is installed and running go to **File-->Import** and select **Existing Maven Projects**. Navigate to the `~ddev` folder and import the project.
 
-Now go to **Run-->Debug Configurations** and select **Remote Java Applications** and hit the **New launch configuration** button to create a new configuration. Fill in `Host: localhost` and `Port: 5005`. Click **Apply** and then **Debug**. The API will now ber initialized as you can see in the terminal window. The debugger is attached to the process running inside the container. You can put breakpoints in you code and start debugging. 
+Now go to **Run-->Debug Configurations** and select **Remote Java Applications** and hit the **New launch configuration** button to create a new configuration. Fill in `Host: localhost` and `Port: 5005`. Click **Apply** and then **Debug**. The API will now ber initialized as you can see in the terminal window. The debugger is attached to the process running inside the container. You can put breakpoints in you code and start debugging.
