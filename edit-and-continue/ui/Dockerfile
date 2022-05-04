@@ -1,4 +1,4 @@
-FROM node
+FROM r.deso.tech/dockerhub/library/node:16
 
 # set up some directories
 RUN mkdir /app

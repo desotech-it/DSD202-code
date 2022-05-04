@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM r.deso.tech/dockerhub/library/node:16
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app/

@@ -1,4 +1,4 @@
-FROM node
+FROM r.deso.tech/dockerhub/library/node:16
 RUN npm install nodemon -g
 
 # set up some directories

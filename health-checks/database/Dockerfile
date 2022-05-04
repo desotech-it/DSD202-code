@@ -1,4 +1,4 @@
-FROM postgres:9.6
+FROM r.deso.tech/dockerhub/library/postgres:12
 
 # Add some static config
 COPY pg_hba.conf /usr/share/postgresql/9.6/
