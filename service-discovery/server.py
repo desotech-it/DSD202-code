@@ -19,8 +19,8 @@ def get_score(name):
     value = redis.get(name);
     if not value:
         return 'NOT FOUND', 404
-    ret = { 'name': name, 'score': value }
+    ret = { 'name': name, 'score': int(value) }
     return jsonify(ret)
-    
+
 if __name__ == '__main__':
     app.run(port=3000, host="0.0.0.0")
